@@ -14,5 +14,32 @@ p {
 /*Header*/
 
 header {
-  back
+  width: 100%;
+
+  padding: 1em;
+  padding-left: 2em;
+
+  background-color: #292C36;
+
+  position: fixed;
+
+  z-index: 100;
+}
+
+header a {
+    color: #FFFFFF;
+}
+
+header h1 {
+  font-size: 1.6em;
+  font-family: 'Lekton', sans-serif;
+  font-weight: lighter;
+}
+
+header #nav-container a {
+  text-decoration: none;
+}
+
+header #nav-container a:hover {
+  color: #2E9DFF;
 }
