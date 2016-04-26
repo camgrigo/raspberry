@@ -1,0 +1,174 @@
+@import(https://fonts.googleapis.com/css?family=Lekton:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Khula:400,600);
+
+* {
+  margin: 0;
+}
+
+/*Text*/
+
+h1, h2, h3 {
+  font-family: 'Lekton', sans-serif;
+}
+
+p {
+  font-family: 'Khula', sans-serif;
+}
+
+.text-container {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/*Header*/
+
+header {
+  position: fixed;
+  height: 160px;
+  z-index: 100;
+}
+
+header .text-container {
+  margin: 25px 50px 25px 50px;
+}
+
+header h3 {
+  color: #53585F
+}
+
+ /*Section*/
+
+section {
+  margin: 0;
+}
+
+/*Title*/
+
+.title {
+  background-image: url("/Users/Cameron/Desktop/3-Screens Project/resources/header_image.jpg");
+  background-size: cover;
+
+  z-index: 1;
+  height: 450px;
+
+  position: relative;
+}
+
+.title .text-container {
+  bottom: 50px;
+  position: absolute;
+}
+
+.title h1 {
+  font-size: 6em;
+  color: #0453FF;
+}
+
+.title p {
+  font-size: 3em;
+  color: #292C36;
+}
+
+/*Floating Page*/
+
+.floating-page {
+  position: relative;
+  z-index: 50;
+}
+
+/*Text Container*/
+
+.floating-page section .text-container {
+  position: relative;
+  margin-top: -25px;
+  padding-top: 50px;
+}
+
+.floating-page section .text-container h2 {
+  font-size: 3em;
+}
+
+.floating-page section .text-container p {
+  font-size: 2em;
+}
+
+.floating-page section .stream {
+  font-size: 250%;
+  text-align: center;
+}
+
+/*Sections*/
+
+.coding, .photography, .music {
+  min-height: 600px;
+}
+
+.coding .text-container h2, .music .text-container h2 {
+  color: #FFFFFF;
+}
+
+.coding .text-container p, .music .text-container p {
+  color: #DCDEE0;
+}
+
+.coding .stream, .music .stream {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.photography .text-container h2 {
+  color: #000000;
+}
+
+.photography .text-container p {
+  color: #25272C;
+}
+
+.photography .stream {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.coding {
+  background-image: linear-gradient(rgba(41, 44, 54, 0.7), rgba(41, 44, 54, 0.7)), url("/Users/Cameron/Desktop/3-Screens Project/resources/coding.png");
+  background-size: cover;
+}
+
+.photography {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    url("/Users/Cameron/Desktop/3-Screens Project/resources/long_way_home.jpg");
+  background-size: cover;
+}
+
+.music {
+  background-image: linear-gradient(rgba(41, 44, 54, 0.7), rgba(41, 44, 54, 0.7)), url("/Users/Cameron/Desktop/3-Screens Project/resources/spotify.png");
+  background-size: cover;
+}
+
+/*Bottom*/
+
+.bottom {
+  background-image: url("/Users/Cameron/Desktop/3-Screens Project/resources/footer_image.jpg");
+  background-size: cover;
+}
+
+/*Footer*/
+
+.about {
+  min-height: 150px;
+  background: rgba(41, 44, 54, 0.7);
+}
+
+footer {
+  height: 800px;
+}
+
+footer .text-container p {
+  font-family: 'Lekton', sans-serif;
+  font-weight: bold;
+  font-size: 1.25em;
+
+  text-align: center;
+
+  color: #01237D;
+
+  padding: 25px 25px;
+}
