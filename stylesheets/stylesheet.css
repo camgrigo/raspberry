@@ -23,8 +23,12 @@ p {
 /*Header*/
 
 header {
+  background-color: rgba(41, 44, 54, 0.9);
+
   position: fixed;
-  height: 160px;
+
+  width: 100%;
+
   z-index: 100;
 }
 
@@ -33,7 +37,7 @@ header .text-container {
 }
 
 header h3 {
-  color: #53585F
+  color: #DCDEE0;
 }
 
  /*Section*/
@@ -48,24 +52,40 @@ section {
   background-image: url("/Users/Cameron/Desktop/3-Screens Project/resources/header_image.jpg");
   background-size: cover;
 
-  z-index: 1;
+  z-index: 10;
+
   height: 450px;
 
+  padding-top: 100px;
+
   position: relative;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.title .portrait {
+  width: 200px;
+
+  border: 10px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
 }
 
 .title .text-container {
   bottom: 50px;
-  position: absolute;
 }
 
 .title h1 {
-  font-size: 6em;
+  font-size: 5em;
   color: #0453FF;
+  padding-bottom: 0.2em;
 }
 
 .title p {
-  font-size: 3em;
+  font-size: 2.5em;
   color: #292C36;
 }
 
@@ -78,14 +98,23 @@ section {
 
 /*Text Container*/
 
+.floating-page section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .floating-page section .text-container {
   position: relative;
+
+  width: 40%;
+
   margin-top: -25px;
-  padding-top: 50px;
 }
 
 .floating-page section .text-container h2 {
   font-size: 3em;
+  padding-bottom: 0.2em;
 }
 
 .floating-page section .text-container p {
@@ -93,6 +122,8 @@ section {
 }
 
 .floating-page section .stream {
+  text-overflow: clip;
+  overflow: hidden;
   font-size: 250%;
   text-align: center;
 }
@@ -143,22 +174,15 @@ section {
   background-size: cover;
 }
 
-/*Bottom*/
-
-.bottom {
-  background-image: url("/Users/Cameron/Desktop/3-Screens Project/resources/footer_image.jpg");
-  background-size: cover;
-}
-
-/*Footer*/
-
 .about {
   min-height: 150px;
   background: rgba(41, 44, 54, 0.7);
 }
 
+/*Footer*/
+
 footer {
-  height: 800px;
+  height: 300px;
 }
 
 footer .text-container p {
@@ -171,4 +195,20 @@ footer .text-container p {
   color: #01237D;
 
   padding: 25px 25px;
+}
+
+/*Bottom*/
+
+.bottom {
+  width: 100%;
+  height: 800px;
+
+  background-image: url("/Users/Cameron/Desktop/3-Screens Project/resources/footer_image.jpg");
+  background-size: cover;
+
+  z-index: 0;
+
+  bottom: 0px;
+
+  position: fixed;
 }
