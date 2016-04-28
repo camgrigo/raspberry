@@ -8,8 +8,8 @@
 }
 
 body {
-    background-image: url("/Users/Cameron/Desktop/3-Screens Project/resources/slideshow/1.jpg");
-    background-size: cover;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/Users/Cameron/Desktop/3-Screens Project/resources/desktop.jpg");
+    background-size: contain;
 }
 
 /*Selection*/
@@ -111,7 +111,6 @@ section {
 /*Section Text Container*/
 
 section .text-container {
-  position: relative;
   width: 40%;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -140,10 +139,8 @@ section .stream {
 .title {
   z-index: 10;
 
-  padding: 20px;
+  padding: 30px;
   padding-top: 100px;
-
-  position: relative;
 }
 
 .title .content {
@@ -165,24 +162,25 @@ section .stream {
 
 .title .text-container {
   text-align: left;
-  bottom: 50px;
+}
+
+.title h1 {
+  font-size: 5em;
+  color: #0453FF;
 }
 
 @media only screen and (max-width: 1110px) {
   .title .text-container {
     text-align: center;
   }
-}
 
-.title h1 {
-  font-size: 5em;
-  color: #0453FF;
-  padding-bottom: 0.2em;
-}
+  .title h1 {
+    font-size: 4em;
+  }
 
-.title p {
-  font-size: 2.5em;
-  color: #292C36;
+  .title .content {
+    flex-direction: column;
+  }
 }
 
 /*About*/
