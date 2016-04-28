@@ -1,8 +1,24 @@
 @import(https://fonts.googleapis.com/css?family=Lekton:400,700,400italic);
 @import url(https://fonts.googleapis.com/css?family=Khula:400,600);
 
+/*All & Body*/
+
 * {
   margin: 0;
+}
+
+body {
+    background-image: url("/Users/Cameron/Desktop/3-Screens Project/resources/slideshow/1.jpg");
+    background-size: cover;
+}
+
+/*Selection*/
+
+::selection {
+  background: rgba(4, 83, 255, 0.4); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: rgba(4, 83, 255, 0.4); /* Gecko Browsers */
 }
 
 /*Text*/
@@ -20,49 +36,120 @@ p {
   margin-right: 50px;
 }
 
+/*Anchors*/
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 /*Header*/
 
 header {
   background-color: rgba(41, 44, 54, 0.9);
-
   position: fixed;
-
   width: 100%;
-
   z-index: 100;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 header .text-container {
-  margin: 25px 50px 25px 50px;
+  margin-left: 50px;
+  display: inline-block;
 }
 
-header h3 {
+header a {
+  color: #FFFFFF;
+}
+
+header a:hover {
+  color: #0453FF;
+}
+
+header .nav-links {
+  color: #FFFFFF;
+  list-style-type: none;
+
+  float: right;
+
+  margin: 0;
+  margin-right: 50px;
+
+  padding: 0;
+}
+
+header .nav-links li {
+  padding-left: 10px;
+  display: inline-block;
+}
+
+header .nav-links li a {
   color: #DCDEE0;
+  display: block;
+  text-align: center;
 }
 
- /*Section*/
+header .nav-links .active {
+  color: #FFFFFF;
+}
+
+/*Section*/
 
 section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0;
+  overflow: hidden;
+}
+
+/*Section Text Container*/
+
+section .text-container {
+  position: relative;
+  width: 40%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+section .text-container h2 {
+  font-size: 3em;
+  padding-bottom: 0.4em;
+}
+
+section .text-container p {
+  font-size: 2em;
+}
+
+section .stream {
+  display: none;
+
+  text-overflow: clip;
+  overflow: hidden;
+  font-size: 250%;
+  text-align: center;
 }
 
 /*Title*/
 
 .title {
-  background-image: url("/Users/Cameron/Desktop/3-Screens Project/resources/header_image.jpg");
-  background-size: cover;
-
   z-index: 10;
 
-  height: 450px;
-
+  padding: 20px;
   padding-top: 100px;
 
   position: relative;
+}
 
+.title .content {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -72,10 +159,19 @@ section {
 
   border: 10px solid rgba(0, 0, 0, 0.2);
   border-radius: 50%;
+
+  margin: 20px;
 }
 
 .title .text-container {
+  text-align: left;
   bottom: 50px;
+}
+
+@media only screen and (max-width: 1110px) {
+  .title .text-container {
+    text-align: center;
+  }
 }
 
 .title h1 {
@@ -89,94 +185,110 @@ section {
   color: #292C36;
 }
 
-/*Floating Page*/
+/*About*/
 
-.floating-page {
-  position: relative;
-  z-index: 50;
+.about {
+  min-height: 300px;
+  background: #FFFFFF;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-/*Text Container*/
+.about .links {
+  font-size: 1.5em;
 
-.floating-page section {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: baseline;
 }
 
-.floating-page section .text-container {
-  position: relative;
-
-  width: 40%;
-
-  margin-top: -25px;
+.about .links div {
+  color: #000000;
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 5px;
 }
 
-.floating-page section .text-container h2 {
-  font-size: 3em;
-  padding-bottom: 0.2em;
+.about .links div:hover {
+  background-color: rgba(4, 83, 255, 0.2);
 }
 
-.floating-page section .text-container p {
-  font-size: 2em;
+.about .links div img, .about .links div a {
+  display: inline;
 }
 
-.floating-page section .stream {
-  text-overflow: clip;
-  overflow: hidden;
-  font-size: 250%;
-  text-align: center;
+.about .links a {
+  text-decoration: none;
 }
 
-/*Sections*/
+.about .links a:hover {
+  text-decoration: none;
+}
 
-.coding, .photography, .music {
+.about .links p, .about .links img {
+  display: inline-block;
+}
+
+.about .links img {
+  width: 30px;
+  height: 30px;
+
+  padding: 5px;
+  padding-right: 10px;
+}
+
+/*Blocks*/
+
+.block {
   min-height: 600px;
 }
 
-.coding .text-container h2, .music .text-container h2 {
+#internship .text-container h2, #harvest .text-container h2 {
   color: #FFFFFF;
 }
 
-.coding .text-container p, .music .text-container p {
+#internship .text-container p, #harvest .text-container p {
   color: #DCDEE0;
 }
 
-.coding .stream, .music .stream {
+#internship .stream, #harvest .stream {
   color: rgba(255, 255, 255, 0.2);
 }
 
-.photography .text-container h2 {
+#photography .text-container h2 {
   color: #000000;
 }
 
-.photography .text-container p {
+#photography .text-container p {
   color: #25272C;
 }
 
-.photography .stream {
+#photography .stream {
   color: rgba(0, 0, 0, 0.2);
 }
 
-.coding {
-  background-image: linear-gradient(rgba(41, 44, 54, 0.7), rgba(41, 44, 54, 0.7)), url("/Users/Cameron/Desktop/3-Screens Project/resources/coding.png");
+#harvest {
+  background-image: linear-gradient(rgba(41, 44, 54, 0.7), rgba(41, 44, 54, 0.7)),
+    url("/Users/Cameron/Desktop/3-Screens Project/resources/slideshow/15.JPG");
   background-size: cover;
 }
 
-.photography {
+#photography {
   background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
     url("/Users/Cameron/Desktop/3-Screens Project/resources/long_way_home.jpg");
   background-size: cover;
 }
 
-.music {
-  background-image: linear-gradient(rgba(41, 44, 54, 0.7), rgba(41, 44, 54, 0.7)), url("/Users/Cameron/Desktop/3-Screens Project/resources/spotify.png");
+#internship {
+  background-image: linear-gradient(rgba(41, 44, 54, 0.7), rgba(41, 44, 54, 0.7)),
+    url("/Users/Cameron/Desktop/3-Screens Project/resources/coding.png");
   background-size: cover;
-}
-
-.about {
-  min-height: 150px;
-  background: rgba(41, 44, 54, 0.7);
 }
 
 /*Footer*/
@@ -195,20 +307,4 @@ footer .text-container p {
   color: #01237D;
 
   padding: 25px 25px;
-}
-
-/*Bottom*/
-
-.bottom {
-  width: 100%;
-  height: 800px;
-
-  background-image: url("/Users/Cameron/Desktop/3-Screens Project/resources/footer_image.jpg");
-  background-size: cover;
-
-  z-index: 0;
-
-  bottom: 0px;
-
-  position: fixed;
 }
