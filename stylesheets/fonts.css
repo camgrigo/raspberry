@@ -1,0 +1,21 @@
+/* Created by Cameron Grigoriadis 2/28/16 */
+
+/*Headings*/
+
+h1, h2, h3, h6 {
+  font-family: 'Lekton', sans-serif;
+}
+
+h1 {
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+/*Paragraphs*/
+
+p {
+  font-family: 'Khula', sans-serif;
+}

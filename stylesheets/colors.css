@@ -1,0 +1,22 @@
+/* Created by Cameron Grigoriadis 2/28/16 */
+
+/*Selection*/
+
+::selection {
+  background: rgba(4, 83, 255, 0.4); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: rgba(4, 83, 255, 0.4); /* Gecko Browsers */
+}
+
+/*Text Colors*/
+
+.jumbotron h1 { color: rgb(4, 83, 255); }
+
+/*Border Colors*/
+
+.jumbotron img { border-color: rgba(41, 44, 54, 0.7);}
+
+/*Background Colors*/
+
+.jumbotron { background-color: rgba(255, 255, 255, 0.5); }
