@@ -1,22 +1,59 @@
-/* Created by Cameron Grigoriadis 2/28/16 */
+/* Cameron Grigoriadis 2016 */
+
+:root {
+  --accent: rgb(255, 88, 68);
+
+  --light-txt: rgb(255, 255, 255);
+  --dark-txt: rgb(27, 29, 36);
+
+  --tp-blue-bg: rgba(8, 105, 229, 0.8);
+  --blue-bg: rgb(40, 13, 232);
+  --light-bg: rgb(248, 248, 248);
+  --gray-bg: rgb(71, 78, 93);
+  --extra-gray-bg: rgb(47, 47, 47);
+
+  --selection: rgba(4, 83, 255, 0.4);
+  --white: rgb(255, 255, 255);
+}
 
 /*Selection*/
 
 ::selection {
-  background: rgba(4, 83, 255, 0.4); /* WebKit/Blink Browsers */
+  background: var(--selection); /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: rgba(4, 83, 255, 0.4); /* Gecko Browsers */
+  background: var(--selection); /* Gecko Browsers */
 }
 
 /*Text Colors*/
 
-.jumbotron h1 { color: rgb(4, 83, 255); }
+.accent { color: var(--accent); }
+.title { color: var(--white); }
+
+/*Link Colors*/
+
+.navbar-nav li a:hover { color: var(--accent) !important; }
 
 /*Border Colors*/
 
-.jumbotron img { border-color: rgba(41, 44, 54, 0.7);}
+.navbar, .navbar-collapse { border-style: none; }
+.bordered-image { border-color: var(--gray-bg); }
 
-/*Background Colors*/
+/*Backgrounds*/
 
-.jumbotron { background-color: rgba(255, 255, 255, 0.5); }
+.navbar { background-color: var(--light-bg); }
+
+.title {
+  background: linear-gradient(
+      rgba(8, 105, 229, 0.8),
+      rgba(8, 105, 229, 0.8)
+    ),
+    url("../resources/slides/slide1.jpg");
+    background-size: cover;
+  }
+
+.projects
+
+.footer {
+  background-color: var(--dark-bg);
+}

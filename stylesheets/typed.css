@@ -1,0 +1,36 @@
+/*Cameron Grigoriadis 2016*/
+
+:root {
+  --cursor-color: rgb(119, 119, 119);
+}
+
+@-webkit-keyframes typing {
+    from { width: 0 }
+    to { width: 16.3em }
+}
+
+@-moz-keyframes typing {
+    from { width: 0 }
+    to { width: 16.3em }
+}
+
+@-webkit-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--cursor-color); }
+}
+
+@-moz-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--cursor-color); }
+}
+
+.typed {
+    white-space:nowrap;
+    overflow:hidden;
+    border-right: .1em solid var(--cursor-color);;
+
+    -webkit-animation: typing 5s steps(20, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
+    -moz-animation: typing 5s steps(20, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
+}
