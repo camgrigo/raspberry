@@ -6,14 +6,23 @@
   --light-txt: rgb(255, 255, 255);
   --dark-txt: rgb(27, 29, 36);
 
-  --tp-blue-bg: rgba(8, 105, 229, 0.8);
-  --blue-bg: rgb(40, 13, 232);
-  --light-bg: rgb(248, 248, 248);
-  --gray-bg: rgb(71, 78, 93);
-  --extra-gray-bg: rgb(47, 47, 47);
+  --white: rgb(255, 255, 255);
+
+  --light-gray: rgb(231, 231, 231);
+  --gray: rgb(71, 78, 93);
+  --dark-gray: rgb(47, 47, 47);
+
+  --blue: rgb(8, 105, 229);
+  --green: rgb(55, 212, 189);
+  --purple: rgb(106, 62, 179);
+
+  --tp-blue: rgba(8, 105, 229, 0.9);
+  --tp-light: rgba(248, 248, 248, 0.8);
+  --tp-gray: rgba(71, 78, 93, 0.8);
+
+  --shadow-blue: rgba(8, 105, 229, 0.4);
 
   --selection: rgba(4, 83, 255, 0.4);
-  --white: rgb(255, 255, 255);
 }
 
 /*Selection*/
@@ -25,35 +34,74 @@
   background: var(--selection); /* Gecko Browsers */
 }
 
-/*Text Colors*/
+/*Text*/
 
 .accent { color: var(--accent); }
 .title { color: var(--white); }
+.projects .title-txt, .project1, .project3, .contact input { color: var(--light-txt); }
+.project2, .contact input { color: var(--dark-txt); }
+.contact h1 { color: var(--white); }
 
-/*Link Colors*/
+/*Links*/
+
+a { color: var(--blue); }
+a:hover { color: var(--accent); }
 
 .navbar-nav li a:hover { color: var(--accent) !important; }
 
-/*Border Colors*/
+.about li a { color: var(--dark-gray); }
+.about li a:hover {
+  color: var(--blue);
+  background-color: var(--white);
+  -moz-box-shadow:    0px 0px 10px 0px var(--light-gray);
+  -webkit-box-shadow: 0px 0px 10px 0px var(--light-gray);
+  box-shadow:         0px 0px 10px 0px var(--light-gray);
+}
+.about li a:active {
+  -moz-box-shadow:    0px 0px 5px 2px var(--shadow-blue);
+  -webkit-box-shadow: 0px 0px 5px 2px var(--shadow-blue);
+  box-shadow:         0px 0px 5px 2px var(--shadow-blue);
+}
+
+/*Borders*/
 
 .navbar, .navbar-collapse { border-style: none; }
-.bordered-image { border-color: var(--gray-bg); }
+.bordered-image { border-color: var(--white); }
 
 /*Backgrounds*/
 
-.navbar { background-color: var(--light-bg); }
+.navbar, .footer { background-color: var(--white); }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 768px) {
+
+  .navbar { background-color: var(--tp-light); }
+
+}
 
 .title {
-  background: linear-gradient(
-      rgba(8, 105, 229, 0.8),
-      rgba(8, 105, 229, 0.8)
-    ),
-    url("../resources/slides/slide1.jpg");
-    background-size: cover;
-  }
-
-.projects
-
-.footer {
-  background-color: var(--dark-bg);
+background: linear-gradient(var(--tp-blue), var(--tp-blue)),
+  url("../3-Screens Project/resources/title_images/title1.jpg");
 }
+
+.projects .title-txt { background-color: var(--purple); }
+  .project1 { background: linear-gradient(var(--tp-gray), var(--tp-gray)),
+      url("../3-Screens Project/resources/stock/coding.png"); }
+  .project2 { background: linear-gradient(var(--tp-light), var(--tp-light)),
+      url("../3-Screens Project/resources/stock/pepper2.jpg"); }
+  .project3 { background: linear-gradient(var(--tp-gray), var(--tp-gray)),
+      url("../3-Screens Project/resources/stock/desktop.jpg"); }
+  .projects button { color: var(--white); border-style: none; }
+  .projects button:hover { color: var(--white); }
+  .project1 button { background-color: var(--accent); }
+  .project2 button { background-color: var(--blue); }
+  .project3 button { background-color: var(--purple); }
+  .project1 button:hover { background-color: var(--purple); }
+  .project2 button:hover { background-color: var(--green); }
+  .project3 button:hover { background-color: var(--accent); }
+
+.contact { background-color: var(--green); }
+  .contact input { background-color: var(--white); }
+  .contact .btn-primary { background-color: var(--blue); }
+
+.bg-cover { background-size: cover; }

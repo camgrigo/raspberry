@@ -2,16 +2,17 @@
 /*http://codepen.io/ArtemGordinsky/pen/GnLBq*/
 
 :root {
+  --interval: 2s;
   --color: rgb(119, 119, 119);
 }
 
-.blinking-cursor {
+.blink {
   color: var(--color);
-  -webkit-animation: 1s blink step-end infinite;
-  -moz-animation: 1s blink step-end infinite;
-  -ms-animation: 1s blink step-end infinite;
-  -o-animation: 1s blink step-end infinite;
-  animation: 1s blink step-end infinite;
+  -webkit-animation: var(--interval) blink step-end infinite;
+  -moz-animation: var(--interval) blink step-end infinite;
+  -ms-animation: var(--interval) blink step-end infinite;
+  -o-animation: var(--interval) blink step-end infinite;
+  animation: var(--interval) blink step-end infinite;
 }
 
 @keyframes "blink" {

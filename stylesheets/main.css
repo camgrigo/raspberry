@@ -1,67 +1,120 @@
 /*Cameron Grigoriadis 2016*/
 
-body {
-    font: 20px Montserrat, sans-serif;
-    line-height: 1.8;
-}
-p {font-size: 16px;}
-.margin {margin-bottom: 45px;}
+.margin { margin-bottom: 45px; }
 
-/*Title*/
-.title .bordered-image {
-  border-style: solid;
-  border-width: 10px;
-}
+/*Container-Fluid*/
 
-/*About*/
-.about {}
-  .about p {
-    margin-top: 22px;
-    max-width: 400px;
-  }
-
-/*Projects*/
-.projects .row {
-  max-width: 80%;
-}
-  .projects .row h1 {
-    font-size: 1.5em;
-    font-weight: bolder;
-  }
-  .projects .row h2 {
-    font-size: 0.8em;
-    font-weight: lighter;
-  }
-
-.bg-2 {
-    background-color: #474e5d;
-    color: #ffffff;
-}
-.bg-3 {
-    background-color: #ffffff;
-    color: #555555;
-}
-.bg-4 {
-    background-color: rgb(40, 13, 232);
-    color: #fff;
-}
-.footer {
-    background-color: #2f2f2f;
-    color: #fff;
-}
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
 }
+
+/*Navbar*/
+
 .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
     border: 0;
     border-radius: 0;
     margin-bottom: 0;
-    font-size: 12px;
+    font-size: 0.8em;
     letter-spacing: 5px;
 }
-.navbar-nav  li a:hover {
-    color: #1abc9c !important;
+
+/*Title*/
+.title .bordered-image {
+  border-style: solid;
+  border-width: 5px;
+}
+
+/*About*/
+.about { padding-bottom: 20px; }
+  .about p { margin-top: 22px; max-width: 450px; }
+  .about ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+    .about li a { padding: 15px 20px; }
+    .about li a img {
+      width: 30px;
+      margin-right: 10px;
+      margin-bottom: 4px; }
+    .about li a:hover {
+      border-style: none;
+      border-radius: 2px;
+    }
+
+/*Projects*/
+.projects .row {
+  padding-top: 65px;
+  padding-bottom: 70px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+  .projects .row button {
+    margin-top: 20px;
+    padding: 20px 40px;
+  }
+  .project1, .project2, .project3 { min-height: 600px; }
+
+/*Contact*/
+
+.contact input {
+  margin: 20px 0px;
+  border-style:none;
+  border-radius: 4px;
+  text-align: center;
+}
+.contact .btn-primary {
+  margin-top: 40px;
+  padding: 10px 50px;
+  border-style: none;
+  border-radius: 4px;
+}
+
+/*Footer*/
+
+.footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/*Queries*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+  .about ul li {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: block;
+  }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+  .about ul li {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline;
+  }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
 }

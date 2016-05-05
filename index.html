@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="stylesheets/fonts.css">
   <link rel="stylesheet" href="stylesheets/colors.css">
   <link rel="stylesheet" href="stylesheets/blinking-cursor.css">
-  <link rel="stylesheet" href="stylesheets/typed.css">
 
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
@@ -31,74 +30,118 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand typed" href="#top">cameron grigoriadis_</a>
+      <a class="navbar-brand visible-md visible-lg" href="#top">cameron grigoriadis<span class="blink">_</span></a>
+      <a class="navbar-brand visible-xs visible-sm" href="#top">cam grigo<span class="blink">_</span></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#projects">PROJECTS</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#contact">contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div id="top" style="padding-top: 50px;"></div>
-<div class="title container-fluid bg-1 text-center">
+<div id="top"></div>
+<div class="title container-fluid bg-1 text-center bg-cover" style="padding-top: 140px;">
   <img src="resources/portrait.png" class="bordered-image img-responsive img-circle" style="display:inline" alt="Portrait" width="200" height="200">
   <h1>Hello, world.</h1>
 </div>
 
-<div id="about">
-<div class="about container-fluid bg-2">
-  <div class="row">
-    <h3 class="col-xs-6 text-right">My name is Cameron Grigoriadis.</h3>
-    <p class="col-xs-6">I'm a iOS Software Developer primarily working in <span class="accent">Swift</span>. I have dabbled in web development, video production, writing, and photography, but programming has stuck with me for almost four years, and I <strong>love</strong> it.</p>
+<div id="about" class="about container-fluid bg-2">
+  <div class="row" style="padding-bottom: 50px;">
+    <h2 class="col-lg-6">My name is Cameron Grigoriadis.</h2>
+    <p class="col-lg-6">I'm a iOS Software Developer primarily working in <a href="https://swift.org" target="_blank" class="accent">Swift</a>. I have dabbled in web development, video production, writing, and photography, but programming has stuck with me for almost four years, and I <strong>love</strong> it.</p>
+  </div>
+  <div class="row text-center">
+    <div class="col-lg-12">
+      <h3 style="padding-bottom: 20px;">- Find me on -</h3>
+      <ul class="list-inline">
+        <li><a href="https://github.com/camgrigo/" target="_blank">
+          <img src="resources/icons/github.png"/>
+          GitHub
+        </a></li>
+        <li><a href="https://medium.com/@camgrigoriadis" target="_blank">
+          <img src="resources/icons/medium.png"/>
+          Medium
+        </a></li>
+        <li><a href="https://www.instagram.com/camgrigo/" target="_blank">
+          <img src="resources/icons/instagram.png"/>
+          Instagram
+        </a></li>
+      </ul>
+    </div>
   </div>
 </div>
 </div>
 
 <div id="projects" class="projects">
-<div class="container-fluid bg-3 text-center">
-  <h2 class="margin">Here's what I'm up to:</h3>
-</div>
-<div class="container-fluid">
-  <div class="row">
-      <div class="col-lg-8">
-        <h1>3-Screens Internship</h1>
-        <h2>Our month-long project is building a personal website.</h2>
-      </div>
-      <div class="col-lg-4"></div>
+  <div class="container-fluid bg-3 text-center" style="padding-bottom: 0px;">
+    <div class="title-txt row">
+      <h1 class="col-lg-12" style="font-size: 2em;">Here's what I'm up to&hellip;</h1>
+    </div>
+
+    <div class="row project1 bg-cover">
+        <div class="col-lg-8">
+          <h1>3-Screens</h1>
+          <h2>My experience interning at a software development company</h2>
+        </div>
+        <div class="col-lg-4"><a href="#">
+          <button class="btn btn-default" type="button">Read More</button>
+        </div></a>
+    </div>
+
+    <div class="row project2 bg-cover">
+        <div class="col-lg-8">
+          <h1>Photography</h1>
+          <h2>A gallery of work from my Digital Photography class</h2>
+        </div>
+        <div class="col-lg-4"><a href="#">
+          <button class="btn btn-default" type="button">View Gallery</button>
+        </div></a>
+    </div>
+
+    <div class="row project3 bg-cover">
+        <div class="col-lg-8">
+          <h1>Harvest</h1>
+          <h2>An app that helps people help people</h2>
+        </div>
+        <div class="col-lg-4"><a href="https://github.com/camgrigo/harvest" target="_blank">
+          <button class="btn btn-default" type="button">View on GitHub</button>
+        </div></a>
+    </div>
   </div>
 
-  <div class="row">
-      <div class="col-lg-8">
-        <h1>Photography</h1>
-        <h2>A gallery of work from my Digital Photography class.</h2>
-      </div>
-      <div class="col-lg-4"></div>
-  </div>
-
-  <div class="row">
-      <div class="col-lg-8">
-        <h1>Harvest</h1>
-        <h2>An app that helps people help people.</h2>
-      </div>
-      <div class="col-lg-4"></div>
   </div>
 </div>
 
-</div>
+<div id="contact" class="contact">
+  <div class="container-fluid text-center">
+    <form role="form">
 
-<div id="contact">
-<div class="container-fluid bg-2 text-center">
-</div>
+      <h1 class="row margin">Want to get in touch?</h1>
+
+      <h2>Just leave your</h2>
+      <div class="form-group">
+        <input class="form-control" type="text" placeholder="name" id="name">
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="text" placeholder="email" id="contact">
+      </div>
+      <h2>and a</h2>
+      <div class="form-group">
+        <input class="form-control" type="text" placeholder="message" id="message">
+      </div>
+
+      <button type="button" class="btn btn-primary btn-large disabled">Contact Me</button>
+
+    </form>
+  </div>
 </div>
 
 <footer class="container-fluid bg-4 footer text-center">
-  <p>Cameron Grigoriadis
-    <span class="accent">2016</span>.
-  </p>
+  <h6>Cameron Grigoriadis <span class="accent">2016</span>.</h6>
 </footer>
 
 </body>
