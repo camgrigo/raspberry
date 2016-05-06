@@ -61,6 +61,9 @@
 /*Contact*/
 
 .contact input {
+  transition-duration: .5s;
+  transition-property: all;
+  
   margin: 20px 0px;
   border-style:none;
   border-radius: 4px;
@@ -87,24 +90,14 @@
 
 }
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
 
-  .about ul li {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    display: block;
-  }
-
-}
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
+@media only screen and (max-width : 768px) {
 
-  .about ul li {
-    margin-left: 10px;
-    margin-right: 10px;
-    display: inline;
+  .about li {
+	 margin: 40px 10px; 
+    display: block;
   }
 
 }

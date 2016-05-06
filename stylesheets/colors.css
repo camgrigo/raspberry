@@ -81,16 +81,16 @@ a:hover { color: var(--accent); }
 
 .title {
 background: linear-gradient(var(--tp-blue), var(--tp-blue)),
-  url("../3-Screens Project/resources/title_images/title1.jpg");
+  url("resources/title_images/title1.jpg");
 }
 
 .projects .title-txt { background-color: var(--purple); }
   .project1 { background: linear-gradient(var(--tp-gray), var(--tp-gray)),
-      url("../3-Screens Project/resources/stock/coding.png"); }
+      url("resources/stock/coding.png"); }
   .project2 { background: linear-gradient(var(--tp-light), var(--tp-light)),
-      url("../3-Screens Project/resources/stock/pepper2.jpg"); }
+      url("resources/stock/pepper2.jpg"); }
   .project3 { background: linear-gradient(var(--tp-gray), var(--tp-gray)),
-      url("../3-Screens Project/resources/stock/desktop.jpg"); }
+      url("resources/stock/desktop.jpg"); }
   .projects button { color: var(--white); border-style: none; }
   .projects button:hover { color: var(--white); }
   .project1 button { background-color: var(--accent); }
