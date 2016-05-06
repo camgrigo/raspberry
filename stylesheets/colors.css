@@ -91,14 +91,12 @@ background: linear-gradient(var(--tp-blue), var(--tp-blue)),
       url("resources/stock/pepper2.jpg"); }
   .project3 { background: linear-gradient(var(--tp-gray), var(--tp-gray)),
       url("resources/stock/desktop.jpg"); }
-  .projects button { color: var(--white); border-style: none; }
-  .projects button:hover { color: var(--white); }
+  .project button { color: var(--white); border-style: none; }
+  .project button:hover { color: var(--white); }
   .project1 button { background-color: var(--accent); }
   .project2 button { background-color: var(--blue); }
   .project3 button { background-color: var(--purple); }
-  .project1 button:hover { background-color: var(--purple); }
-  .project2 button:hover { background-color: var(--green); }
-  .project3 button:hover { background-color: var(--accent); }
+  .project button:hover { background-color: var(--green); }
 
 .contact { background-color: var(--green); }
   .contact input { background-color: var(--white); }

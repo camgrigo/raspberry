@@ -55,7 +55,6 @@ p, li {
 @media only screen and (min-width : 768px) {
 
   .about h2 { text-align: left; }
-  .projects .row { text-align: center; }
 
 }
 
@@ -63,7 +62,6 @@ p, li {
 @media only screen and (min-width : 992px) {
 
   .about h2 { text-align: right; }
-  .projects .row { text-align: left; }
 
 }
 
@@ -82,8 +80,8 @@ p, li {
   font-size: 1em;
 }
 
-.project1, .project2, .project3 {
-  text-align: left;
+.projects .title-txt, .project1, .project2, .project3 {
+  text-align: center;
 }
 
 /*Contact*/
