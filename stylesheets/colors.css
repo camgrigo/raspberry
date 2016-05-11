@@ -50,18 +50,10 @@ a:hover { color: var(--accent); }
 .navbar-nav li a:hover { color: var(--accent) !important; }
 
 .about li a { color: var(--dark-gray); }
-.about li a:hover {
-  color: var(--blue);
-  background-color: var(--white);
-  -moz-box-shadow:    0px 0px 10px 0px var(--light-gray);
-  -webkit-box-shadow: 0px 0px 10px 0px var(--light-gray);
-  box-shadow:         0px 0px 10px 0px var(--light-gray);
-}
-.about li a:active {
-  -moz-box-shadow:    0px 0px 5px 2px var(--shadow-blue);
-  -webkit-box-shadow: 0px 0px 5px 2px var(--shadow-blue);
-  box-shadow:         0px 0px 5px 2px var(--shadow-blue);
-}
+.about li a:hover { color: var(--white); }
+  .about li .github:hover { background-color: var(--blue); }
+  .about li .medium:hover { background-color: var(--purple); }
+  .about li .instagram:hover { background-color: var(--accent); }
 
 /*Borders*/
 

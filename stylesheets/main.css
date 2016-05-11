@@ -22,12 +22,17 @@
 }
 
 /*Title*/
+
+.title img {
+  max-width: 50%;
+}
 .title .bordered-image {
   border-style: solid;
   border-width: 5px;
 }
 
 /*About*/
+
 .about { padding-bottom: 20px; }
   .about p { margin-top: 22px; max-width: 450px; }
   .about ul {
@@ -39,7 +44,8 @@
     .about li a img {
       width: 30px;
       margin-right: 10px;
-      margin-bottom: 4px; }
+      margin-bottom: 4px;
+    }
     .about li a:hover {
       border-style: none;
       border-radius: 2px;
