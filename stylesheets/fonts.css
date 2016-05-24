@@ -19,7 +19,7 @@ p {
 /*Headings*/
 
 h1, h2, h3, h4, h5, h6,
-.navbar, .btn, .footer, input {
+.navbar, .btn, .footer, input, textarea {
   font-family: var(--heading);
 }
 
@@ -52,16 +52,17 @@ p, li {
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (min-width : 768px) {
+@media only screen and (max-width : 768px) {
 
-  .about h2 { text-align: left; }
+  .about .bio { text-align: center; }
 
 }
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 992px) {
+@media only screen and (min-width : 768px) {
 
   .about h2 { text-align: right; }
+  .about p { text-align: left; }
 
 }
 
@@ -86,13 +87,16 @@ p, li {
 
 /*Contact*/
 
-.contact p {
+.contact p, .contact input, .contact textarea {
   font-size: 1.2em;
+  text-align: center;
+}
+
+.contact p {
   font-weight: normal;
 }
 .contact input {
   height: 60px;
-  font-size: 1.2em;
 }
 .contact .btn-primary {
   font-size: 1.5em;

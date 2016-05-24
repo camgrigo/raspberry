@@ -22,16 +22,20 @@
 
   --shadow-blue: rgba(8, 105, 229, 0.4);
 
-  --selection: rgba(4, 83, 255, 0.4);
+  --selection: rgba(8, 105, 229, 0.8);
 }
 
 /*Selection*/
 
 ::selection {
   background: var(--selection); /* WebKit/Blink Browsers */
+  color: var(--white);
+  text-shadow: 0px 2px 2px var(--dark-txt);
 }
 ::-moz-selection {
   background: var(--selection); /* Gecko Browsers */
+  color: var(--white);
+  text-shadow: 0px 2px 0px var(--dark-txt);
 }
 
 /*Text*/
