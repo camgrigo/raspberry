@@ -14,13 +14,26 @@
   <link rel="stylesheet" href="stylesheets/fonts.css">
   <link rel="stylesheet" href="stylesheets/colors.css">
   <link rel="stylesheet" href="stylesheets/blinking-cursor.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <!-- Gallery Stylesheets -->
+  <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+  <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
 
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="50" onload="loadDoc()">
+
+  <script>
+  function loadDoc() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("GET", "http://159.203.237.129/api/404", true);
+    xhttp.send();
+  }
+  </script>
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
@@ -89,7 +102,7 @@
         <div>
             <h1>3-Screens</h1>
             <h2>My experience interning at a software development company</h2>
-            <a href="#"><button class="btn btn-default" type="button">Read More</button></a>
+            <a href="https://medium.com/@camgrigoriadis/interning-at-3-screens-b550c03cb515#.17v4lryp8" target="_blank"><button class="btn btn-default" type="button">Read More</button></a>
         </div>
       </div>
 
@@ -104,7 +117,7 @@
       <div class="col-lg-4 project project3 bg-cover">
         <div>
           <h1>Harvest</h1>
-          <h2>An app that helps people help people</h2>
+          <h2>An app that keeps track of experiences with others</h2>
           <a href="https://github.com/camgrigo/harvest" target="_blank"><button class="btn btn-default" type="button">View on GitHub</button></a>
         </div>
       </div>
@@ -146,6 +159,66 @@
 <footer class="container-fluid bg-4 footer text-center">
   <h6>Cameron Grigoriadis <span class="accent">2016</span>.</h6>
 </footer>
+
+<div id="links">
+    <a href="resources/stock/._architecture1.jpg" target="_blank" title="The Courtyard" data-gallery>
+        <img src="resources/stock/._architecture1.jpg" alt="The Courtyard">
+    </a>
+    <a href="resources/stock/IMG_0753.jpg" target="_blank" title="JOY" data-gallery>
+        <img src="resources/stock/IMG_0753.jpg" alt="JOY">
+    </a>
+    <a href="resources/stock/._architecture2.jpg" target="_blank" title="Arched Theatre Entrance" data-gallery>
+        <img src="resources/stock/._architecture2.jpg" alt="Arched Theatre Entrance">
+    </a>
+    <a href="resources/stock/IMG_1014.JPG" target="_blank" title="Glowing Sunset" data-gallery>
+        <img src="resources/stock/IMG_1014.JPG" alt="Glowing Sunset">
+    </a>
+    <a href="resources/stock/bench.jpg" target="_blank" title="Water Drops" data-gallery>
+        <img src="resources/stock/bench.jpg" alt="Water Drops">
+    </a>
+    <a href="resources/stock/._architecture3.jpg" target="_blank" title="Sky Scraper" data-gallery>
+        <img src="resources/stock/._architecture3.jpg" alt="Sky Scraper">
+    </a>
+</div>
+
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<script src="js/bootstrap-image-gallery.min.js"></script>
 
 </body>
 </html>
